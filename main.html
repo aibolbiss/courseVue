@@ -1,64 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-  <style>
-    table{
-      width: 100%;
-      font-family: Verdana;
-    }
-    th{
-      font-size: 22px;
-      height: 150px;
-    }
-    td{
-      text-align: center;
-    }
-.food{
-  font-weight: bold;
-}
-.cook{
-  font-style: italic;
-  text-decoration: underline;
-}
-  </style>
-</head>
-<body>
-<div>
-  <table width="100%" border="1">
-    <thead>
-    <th id="vietnam"><a href="">Vietnam</a></th>
-    <th id="mongol"><a href="">Mongolia</a></th>
-    <th id="argentina"><a href="">Argentina</a></th>
-    <th id="mexico"><a href="">Mexico</a></th>
-    <th id="japan"><a href="">Japan</a></th>
-    </thead>
-    <tbody>
-    <tr>
-      <td><p class="food">Bludo</p><p class="cook">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aut debitis distinctio dolorem ea ipsam magnam numquam quos tempore!</p></td>
-      <td><p class="food">Bludo</p><p class="cook">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aut debitis distinctio dolorem ea ipsam magnam numquam quos tempore!</p></td>
-      <td><p class="food">Bludo</p><p class="cook">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aut debitis distinctio dolorem ea ipsam magnam numquam quos tempore!</p></td>
-      <td><p class="food">Bludo</p><p class="cook">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aut debitis distinctio dolorem ea ipsam magnam numquam quos tempore!</p></td>
-      <td><p class="food">Bludo</p><p class="cook">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aut debitis distinctio dolorem ea ipsam magnam numquam quos tempore!</p></td>
-    </tr>
-    <tr>
-      <td colspan="5">Population</td>
-    </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-      <td>4</td>
-      <td>4</td>
-      <td>4</td>
-      <td>4</td>
-      <td>4</td>
-    </tr>
-    </tfoot>
-  </table>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Strany i jratva</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <table width="100%" border="1">
+                <thead>
+                    <th class="fade" id="vietnam"><div class="links"><a href="">Vietnam</a></div></th>
+                    <th class="fade" id="mongol"><a href="">Mongolia</a></th>
+                    <th class="fade" id="argentina"><a href="">Argentina</a></th>
+                    <th class="fade" id="mexico"><a href="">Mexico</a></th>
+                    <th class="fade" id="japan"><a href="">Japan</a></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="food">Bludo</p>
+                            <p class="cook">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. A alias aut debitis distinctio
+                                dolorem ea ipsam magnam numquam quos tempore!
+                            </p>
+                        </td>
+                        <td>
+                            <p class="food">Bludo</p>
+                            <p class="cook">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. A alias aut debitis distinctio
+                                dolorem ea ipsam magnam numquam quos tempore!
+                            </p>
+                        </td>
+                        <td>
+                            <p class="food">Bludo</p>
+                            <p class="cook">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. A alias aut debitis distinctio
+                                dolorem ea ipsam magnam numquam quos tempore!
+                            </p>
+                        </td>
+                        <td>
+                            <p class="food">Bludo</p>
+                            <p class="cook">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. A alias aut debitis distinctio
+                                dolorem ea ipsam magnam numquam quos tempore!
+                            </p>
+                        </td>
+                        <td>
+                            <p class="food">Bludo</p>
+                            <p class="cook">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. A alias aut debitis distinctio
+                                dolorem ea ipsam magnam numquam quos tempore!
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Population</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><img class="flag" src="./img/flags/viet_flag.jpg" alt="Флаг Вьетнама"></td>
+                        <td><img class="flag "src="./img/flags/mong_flag.webp" alt="Флаг Монголии"></td>
+                        <td><img class="flag" src="./img/flags/arg_flag.webp" alt="Флаг Аргентины"></td>
+                        <td><img class="flag" src="./img/flags/mex_flag.jpg" alt="Флаг Мексики"></td>
+                        <td><img class="flag" src="./img/flags/jap_flag.webp" alt="Флаг Японии"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
 </html>
