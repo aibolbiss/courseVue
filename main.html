@@ -8,297 +8,186 @@
         />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Strany i jratva</title>
-        <!-- <link rel="stylesheet" href="style.css" /> -->
-        <style>
-          table {
-    width: 100%;
-    font-family: Verdana;
-}
-th {
-    border-radius: 7px;
-    font-size: 22px;
-    height: 150px;
-    transition: transform 0.2s;
-}
-th:hover {
-    transform: scale(1.07);
-}
-.text_dec{
-    opacity: 1;
-    text-shadow: 5px 5px 4px rgba(0,0,0,0.6);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: gray;
-}
-.text_dec_food{
-    opacity: 1;
-    text-shadow: 5px 5px 4px rgba(0,0,0,0.6);
-}
-a {
-    color: white;
-    text-decoration: none;
-}
-a:hover{
-  text-decoration: underline;
-}
-td {
-    position: relative;
-    border-radius: 7px;
-    vertical-align: top;
-    text-align: center;
-    width: 200px;
-    color: black;
-}
-.food {
-    
-    font-weight: bold;
-    font-size: 22px;
-}
-.cook {
-    /* font-style: italic; */
-    /* text-decoration: underline; */
-    font-size: 18px;
-}
-#vietnam {
-    background-image: url("./img/Viet_nam.jpg");
-    
-}
-#mongol{
-  background-image: url("./img/mongolia.jpg");
-}
-#argentina{
-  background-image: url("./img/argentina.jpg");
-}
-#mexico{
-  background-image: url("./img/mexico.jpg");
-}
-#japan{
-  background-image: url("./img/japan.jpg");
-}
-.fade{
-  position: relative;
-  z-index: 100;
-  background-size: 100% 100%;          
-    /* opacity: 0.6;     */
-}
-.fade:hover {
-  position: relative;
-  z-index: 1000;
-    opacity: 1;
-    -webkit-animation: fade 1s;
-    animation: fade 1s;
-    -moz-animation: fade 1s;
-    -o-animation: fade 1s;
-}
-.fade:not(:hover){
-  opacity: 0.6;
-    -webkit-animation: unfade 1s;
-    animation: unfade 1s;
-    -moz-animation: unfade 1s;
-    -o-animation: unfade 1s;
-}
-@keyframes fade {
-    0% {
-        opacity: 0.6;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-webkit-keyframes fade {
-    0% {
-        opacity: 0.6;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-moz-keyframes fade {
-    0% {
-        opacity: 0.6;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-o-keyframes fade {
-    0% {
-        opacity: 0.6;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes unfade {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.6;
-    }
-}
-@-webkit-keyframes unfade {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.6;
-    }
-}
-@-moz-keyframes unfade {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.6;
-    }
-}
-@-o-keyframes unfade {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.6;
-    }
-}
-.food_img{
-    margin-top: 25px;
-    vertical-align: top; 
-    width: 200px;
-    height: 200px;
-    border-radius: 20px 20px 20px 20px;
-    opacity: 0.7;
-    box-shadow: 3px 3px 2px rgba(0,0,0,0.6);
-}
-.flag{
-    margin-top: 10px;
-    border-radius: 100px;
-    width: 50px;
-    height: 50px;
-    box-shadow: 3px 3px 2px rgba(0,0,0,0.6);
-}
-        </style>
+        <link rel="stylesheet" href="style.css" />
+        <style></style>
     </head>
     <body>
         <div>
-            <table width="100%" border="1">
+            <table border="1">
                 <thead>
                     <th class="fade" id="vietnam">
-                        <a class="text_dec" href="https://ru.wikipedia.org/wiki/%D0%92%D1%8C%D0%B5%D1%82%D0%BD%D0%B0%D0%BC" target="_blank">Vietnam</a>
+                        <a
+                            class="text_dec"
+                            href="https://ru.wikipedia.org/wiki/%D0%92%D1%8C%D0%B5%D1%82%D0%BD%D0%B0%D0%BC"
+                            target="_blank"
+                            >Vietnam</a
+                        >
                     </th>
                     <th class="fade" id="mongol">
-                        <a class="text_dec" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BD%D0%B3%D0%BE%D0%BB%D0%B8%D1%8F" target="_blank">Mongolia</a>
+                        <a
+                            class="text_dec"
+                            href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BD%D0%B3%D0%BE%D0%BB%D0%B8%D1%8F"
+                            target="_blank"
+                            >Mongolia</a
+                        >
                     </th>
                     <th class="fade" id="argentina">
-                        <a class="text_dec" href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%B3%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%D0%B0" target="_blank">Argentina</a>
+                        <a
+                            class="text_dec"
+                            href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%B3%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%D0%B0"
+                            target="_blank"
+                            >Argentina</a
+                        >
                     </th>
                     <th class="fade" id="mexico">
-                        <a class="text_dec" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BA%D1%81%D0%B8%D0%BA%D0%B0" target="_blank">Mexico</a>
+                        <a
+                            class="text_dec"
+                            href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BA%D1%81%D0%B8%D0%BA%D0%B0"
+                            target="_blank"
+                            >Mexico</a
+                        >
                     </th>
                     <th class="fade" id="japan">
-                        <a class="text_dec" href="https://ru.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F" target="_blank">Japan</a>
+                        <a
+                            class="text_dec"
+                            href="https://ru.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F"
+                            target="_blank"
+                            >Japan</a
+                        >
                     </th>
                 </thead>
                 <tbody>
                     <tr>
                         <td id="viet_food">
-                          <img class="food_img" src="./img/food/viet_food.jpg" alt="Нямка Вьетнама">
-                          <div class="">
-                            <p class="food text_dec">Phở or pho</p>
-                            <p class="cook text_dec_food">
-                                Phở or pho is a Vietnamese soup consisting of
-                                broth, rice noodles (bánh phở), herbs, and meat
-                                (usually beef) (phở bò), sometimes chicken (phở
-                                gà). Pho is a popular food in Vietnam where it
-                                is served in households, street stalls and
-                                restaurants countrywide. Pho is considered
-                                Vietnam's national dish.
-                            </p>
+                            <img
+                                class="food_img"
+                                src="./img/food/viet_food.jpg"
+                                alt="Нямка Вьетнама"
+                            />
+                            <div class="">
+                                <p class="food text_dec">Phở or pho</p>
+                                <p class="cook text_dec_food">
+                                    Phở or pho is a Vietnamese soup consisting
+                                    of broth, rice noodles (bánh phở), herbs,
+                                    and meat (usually beef) (phở bò), sometimes
+                                    chicken (phở gà). Pho is a popular food in
+                                    Vietnam where it is served in households,
+                                    street stalls and restaurants countrywide.
+                                    Pho is considered Vietnam's national dish.
+                                </p>
                             </div>
                         </td>
                         <td id="mong_food">
-                          <img class="food_img" src="./img/food/mong_food.jpg" alt="Нямка Монголии">
-                          <div>
-                            <p class="food text_dec">Khuushuur</p>
-                            <p class="cook text_dec_food">
-                                Khuushuur is a meat pastry or dumpling popular
-                                in Mongolia that is relatively similar to
-                                Russian and other cuisines like chiburekki or
-                                Garlic chives wrap. The meat, beef, mutton, or
-                                camel, is ground up and mixed with onion (or
-                                garlic), salt and other spices. The cook rolls
-                                the dough into circles, then places the meat
-                                inside the dough and folds the dough in half,
-                                creating a flat half-circular pocket. The cook
-                                then closes the pockets by pressing the edges
-                                together. A variety of Khuushuur has a round
-                                shape produced by pressing the dough and mince
-                                together using the dough roller.
-                            </p>
-                          </div>
+                            <img
+                                class="food_img"
+                                src="./img/food/mong_food.jpg"
+                                alt="Нямка Монголии"
+                            />
+                            <div>
+                                <p class="food text_dec">Khuushuur</p>
+                                <p class="cook text_dec_food">
+                                    Khuushuur is a meat pastry or dumpling
+                                    popular in Mongolia that is relatively
+                                    similar to Russian and other cuisines like
+                                    chiburekki or Garlic chives wrap. The meat,
+                                    beef, mutton, or camel, is ground up and
+                                    mixed with onion (or garlic), salt and other
+                                    spices. The cook rolls the dough into
+                                    circles, then places the meat inside the
+                                    dough and folds the dough in half, creating
+                                    a flat half-circular pocket. The cook then
+                                    closes the pockets by pressing the edges
+                                    together. A variety of Khuushuur has a round
+                                    shape produced by pressing the dough and
+                                    mince together using the dough roller.
+                                </p>
+                            </div>
                         </td>
                         <td id="arg_food">
-                          <img class="food_img" src="./img/food/arg_food.jpg" alt="Нямка Аргентины">
-                          <div>
-                            <p class="food text_dec">Escalope</p>
-                            <p class="cook text_dec_food">
-                                An escalope is a piece of boneless meat that has
-                                been thinned out using a mallet or rolling pin
-                                or beaten with the handle of a knife, or merely
-                                butterflied. The mallet breaks down the fibers
-                                in the meat, making it more tender. But the
-                                thinner meat cooks faster with more moisture
-                                loss. The meat is then coated and fried. The
-                                term escalope is also applied to potatoes that
-                                have been thinly sliced. Potatoes prepared in
-                                this manner are often called "scallops"
-                            </p>
-                          </div>
+                            <img
+                                class="food_img"
+                                src="./img/food/arg_food.jpg"
+                                alt="Нямка Аргентины"
+                            />
+                            <div>
+                                <p class="food text_dec">Escalope</p>
+                                <p class="cook text_dec_food">
+                                    An escalope is a piece of boneless meat that
+                                    has been thinned out using a mallet or
+                                    rolling pin or beaten with the handle of a
+                                    knife, or merely butterflied. The mallet
+                                    breaks down the fibers in the meat, making
+                                    it more tender. But the thinner meat cooks
+                                    faster with more moisture loss. The meat is
+                                    then coated and fried. The term escalope is
+                                    also applied to potatoes that have been
+                                    thinly sliced. Potatoes prepared in this
+                                    manner are often called "scallops"
+                                </p>
+                            </div>
                         </td>
                         <td id="mex_food">
-                          <img class="food_img" src="./img/food/mex_food.jpg" alt="Нямка Мексики">
-                          <div>
-                            <p class="food text_dec">Birria</p>
-                            <p class="cook text_dec_food">
-                                Birria is a Mexican dish from the state of
-                                Jalisco. The dish is a meat stew traditionally
-                                made from goat meat, but occasionally made from
-                                beef or mutton. The dish is often served at
-                                celebratory occasions, such as weddings and
-                                baptisms, and holidays, such as Christmas and
-                                Easter. Preparation techniques vary, but the
-                                dish is often served with corn tortillas, onion,
-                                cilantro and lime. The meat is marinated in an
-                                adobo made of vinegar, dried chiles, herbs, and
-                                spices before being cooked in a broth.
-                            </p>
-                          </div>
+                            <img
+                                class="food_img"
+                                src="./img/food/mex_food.jpg"
+                                alt="Нямка Мексики"
+                            />
+                            <div>
+                                <p class="food text_dec">Birria</p>
+                                <p class="cook text_dec_food">
+                                    Birria is a Mexican dish from the state of
+                                    Jalisco. The dish is a meat stew
+                                    traditionally made from goat meat, but
+                                    occasionally made from beef or mutton. The
+                                    dish is often served at celebratory
+                                    occasions, such as weddings and baptisms,
+                                    and holidays, such as Christmas and Easter.
+                                    Preparation techniques vary, but the dish is
+                                    often served with corn tortillas, onion,
+                                    cilantro and lime. The meat is marinated in
+                                    an adobo made of vinegar, dried chiles,
+                                    herbs, and spices before being cooked in a
+                                    broth.
+                                </p>
+                            </div>
                         </td>
                         <td id="jap_food">
-                          <img class="food_img" src="./img/food/jap_food.jpg" alt="Нямка Японии">
-                          <div>
-                            <p class="food text_dec">Yakiniku</p>
-                            <p class="cook text_dec_food">
-                                Yakiniku , meaning "grilled meat", is a Japanese
-                                term that, in its broadest sense, refers to
-                                grilled meat cuisine. "Yakiniku" originally
-                                referred to western "barbecue" food, the term
-                                being popularized by Japanese writer Kanagaki
-                                Robun in his Seiyo Ryoritsu (i.e. "western food
-                                handbook") in 1872 (Meiji period). The term
-                                later became associated with Korean-derived
-                                cuisine during the early Shōwa period. Due to
-                                the Korean War, the terms associated with Korea
-                                in Japan were divided into North Korea (Kita
-                                Chōsen) and South Korea (Kankoku); the reference
-                                to a "yakiniku restaurant" arose as a
-                                politically correct term for restaurants of
-                                either origin.
-                            </p>
-                          </div>
+                            <img
+                                class="food_img"
+                                src="./img/food/jap_food.jpg"
+                                alt="Нямка Японии"
+                            />
+                            <div>
+                                <p class="food text_dec">Yakiniku</p>
+                                <p class="cook text_dec_food">
+                                    Yakiniku , meaning "grilled meat", is a
+                                    Japanese term that, in its broadest sense,
+                                    refers to grilled meat cuisine. "Yakiniku"
+                                    originally referred to western "barbecue"
+                                    food, the term being popularized by Japanese
+                                    writer Kanagaki Robun in his Seiyo Ryoritsu
+                                    (i.e. "western food handbook") in 1872
+                                    (Meiji period). The term later became
+                                    associated with Korean-derived cuisine
+                                    during the early Shōwa period. Due to the
+                                    Korean War, the terms associated with Korea
+                                    in Japan were divided into North Korea (Kita
+                                    Chōsen) and South Korea (Kankoku); the
+                                    reference to a "yakiniku restaurant" arose
+                                    as a politically correct term for
+                                    restaurants of either origin.
+                                </p>
+                            </div>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="text_dec" style="font-size: 18px;">Population</td>
+                        <td
+                            colspan="5"
+                            class="text_dec"
+                            style="font-size: 18px"
+                        >
+                            Population
+                        </td>
                     </tr>
                 </tbody>
                 <tfoot>
