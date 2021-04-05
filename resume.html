@@ -5,15 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <!-- Main section -->
-        <div>
+        <div class="main-content-section">
             <!-- Main content section -->
             <div>
                 <!-- About section -->
-                <div>
-                    <h2 style="color: red;">Front-End Developer</h2>
+                <div class="about-me-section">
+                    <h2 class="about-me-profession">Front-End Developer</h2>
                     <h1>Anton Chornyi</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -25,43 +36,43 @@
                         ratione deleniti. Nihil consequuntur quibusdam molestias
                         ratione aspernatur.
                     </p>
-                    <!-- My projects -->
-                    <div>
-                        <h3>Projects</h3>
-                        <ol>
-                            <li>
-                                <a href="https://hellenglish.goit.global/">
-                                    https://hellenglish.goit.global/</a
-                                >
-                                <span>............</span>
-                                <span>[ HTML5, CSS3 ]</span>
-                            </li>
-                            <li>
-                                <a href="https://kidslike.goit.global/">
-                                    https://kidslike.goit.global/
-                                </a>
-                                <span>............</span>
-                                <span>[ JavaScript ]</span>
-                            </li>
-                            <li>
-                                <a href="https://cryptohub.goit.global/">
-                                    https://cryptohub.goit.global/</a
-                                >
-                                <span>............</span>
-                                <span>[ React.js, Node.js ]</span>
-                            </li>
-                        </ol>
-                    </div>
+                </div>
+                <!-- My projects -->
+                <div class="my-project-section">
+                    <h3>Projects</h3>
+                    <ol>
+                        <li class="project-item-first">
+                            <a href="https://hellenglish.goit.global/">
+                                https://hellenglish.goit.global/</a
+                            >
+                            <span>............</span>
+                            <span>[ HTML5, CSS3 ]</span>
+                        </li>
+                        <li>
+                            <a href="https://kidslike.goit.global/">
+                                https://kidslike.goit.global/
+                            </a>
+                            <span>.................</span>
+                            <span>[ JavaScript ]</span>
+                        </li>
+                        <li>
+                            <a href="https://cryptohub.goit.global/">
+                                https://cryptohub.goit.global/</a
+                            >
+                            <span>.............</span>
+                            <span>[ React.js, Node.js ]</span>
+                        </li>
+                    </ol>
                 </div>
                 <!-- Work experience -->
-                <div>
+                <div class="my-work-section">
                     <h3>Work Experience</h3>
                     <!-- First place -->
                     <div>
                         <h4>Front-End Developer Freelance</h4>
                         <p>September 2019 - up to now | Country</p>
                         <ul>
-                            <li>
+                            <li class="project-item-first">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
@@ -82,7 +93,7 @@
                         <h4>Manager Roga & Kopyta New</h4>
                         <p>March 2015 - October 2018 | Country</p>
                         <ul>
-                            <li>
+                            <li class="project-item-first">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod labore et dolore
                                 magna aliqua.
@@ -96,7 +107,7 @@
                         <h4>Manager Roga & Kopyta LLC</h4>
                         <p>June 2014 - February 2015 | Country</p>
                         <ul>
-                            <li>
+                            <li class="project-item-first">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit.
                             </li>
@@ -106,50 +117,82 @@
                     </div>
                 </div>
                 <!-- Education block -->
-                <div>
+                <div class="my-education-section">
                     <h3>Education</h3>
                     <h4>National University of Radioelectronics</h4>
                     <h4>Management</h4>
                     <p>September 2009 - June 2014 | Country</p>
                 </div>
             </div>
-            <aside>
-                <img src="./img/mexico.jpg" alt="fotka" />
+            <!-- sidebar section -->
+            <aside class="sidebar-section">
+                <img
+                    src="./img/mexico.jpg"
+                    alt="fotka"
+                    width="370"
+                    height="345"
+                />
                 <!-- contacts section -->
-                <div>
-                    <h3>Contacts</h3>
+                <div class="contacts__section">
+                    <h3 class="sidebar__title">Contacts</h3>
                     <div>
-                        <span>C:</span>
-                        <a href="tel:+77777777777">+7 777 777 77 77</a>
+                        <span class="contacts_section_type">C:</span>
+                        <a class="contacts_section_link" href="tel:+77777777777"
+                            >+7 777 777 77 77</a
+                        >
                     </div>
                     <div>
-                        <span>E:</span>
-                        <a href="mailto:chornyiav@gmail.com"
+                        <span class="contacts_section_type">E:</span>
+                        <a
+                            class="contacts_section_link"
+                            href="mailto:chornyiav@gmail.com"
                             >chornyiav@gmail.com</a
                         >
                     </div>
                 </div>
                 <!-- tech skills -->
-                <div>
-                    <h3>Tech Skills</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>GIT</li>
-                        <li>WebPack</li>
-                        <li>JavaScript</li>
-                        <li>React.js</li>
-                        <li>Node.js</li>
+                <div class="techskills__section">
+                    <h3 class="sidebar__title">Tech Skills</h3>
+                    <ul class="techskills__list">
+                        <li class="techskills_item">
+                            <span class="techskills_item_text">HTML5</span>
+                        </li>
+                        <li class="techskills_item">
+                            <span class="techskills_item_text">CSS3</span>
+                        </li>
+                        <li class="techskills_item">
+                            <span class="techskills_item_text">GIT</span>
+                        </li>
+                        <li class="techskills_item">
+                            <span class="techskills_item_text">WebPack</span>
+                        </li>
+                        <li class="techskills_item">
+                            <span class="techskills_item_text">JavaScript</span>
+                        </li>
+                        <li class="techskills_item">
+                            <span class="techskills_item_text">React.js</span>
+                        </li>
+                        <li class="techskills_item">
+                            <span class="techskills_item_text">Node.js</span>
+                        </li>
                     </ul>
                 </div>
                 <!-- soft skills -->
-                <div>
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Scrum</li>
-                        <li>Agile</li>
-                        <li>GTD</li>
-                        <li>Teamwork</li>
+                <div class="softskills__section">
+                    <h3 class="sidebar__title">Soft Skills</h3>
+                    <ul class="softskills__list">
+                        <li class="softskills_item">
+                            <span class="softskills_item_text">Scrum</span>
+                        </li>
+                        <li class="softskills_item">
+                            <span class="softskills_item_text">Agile</span>
+                        </li>
+                        <li class="softskills_item">
+                            <span class="softskills_item_text">GTD</span>
+                        </li>
+                        <li class="softskills_item">
+                            <span class="softskills_item_text">Teamwork</span>
+                        </li>
                     </ul>
                 </div>
             </aside>

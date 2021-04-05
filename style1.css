@@ -1,0 +1,9 @@
+.list__first_row {
+    display: flex;
+}
+.list__items {
+    color: transparent;
+    margin: 2px;
+    width: 550px;
+    height: 400px;
+}
