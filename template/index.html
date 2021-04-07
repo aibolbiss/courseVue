@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Tailwind CSS</title>
+</head>
+<body class="text-pink-600">
+    <header class="flex justify-between border-b border-black mb-2 py-2">
+        <a href="#" class="w-1/2">Logo</a>
+        <ul class="flex w-1/2 justify-between">
+            <li>About</li>
+            <li>Info</li>
+            <li>Contacts</li>
+            <li>Express Post</li>
+        </ul>
+    </header>
+    <div class="container mx-auto">
+        <div class="grid grid-cols-3 gap-2 text-center">
+            <div class="bg-blue-400 rounded transition duration-700 ease-in-out hover:bg-blue-200 p-8">1</div>
+            <div class="bg-blue-400 rounded transition duration-700 ease-in-out hover:bg-blue-200 p-8">2</div>
+            <div class="bg-blue-400 rounded transition duration-700 ease-in-out hover:bg-blue-200 p-8">3</div>
+            <div class="bg-blue-400 rounded transition duration-700 ease-in-out hover:bg-blue-200 p-8">4</div>
+            <div class="bg-blue-400 rounded transition duration-700 ease-in-out hover:bg-blue-200 p-8">5</div>
+            <div class="bg-blue-400 rounded transition duration-700 ease-in-out hover:bg-blue-200 p-8">6</div>
+            <div class="bg-blue-400 rounded transition duration-700 ease-in-out hover:bg-blue-200 p-8">7</div>
+            <div class="bg-blue-400 rounded transition duration-700 ease-in-out hover:bg-blue-200 p-8">8</div>
+            <div class="bg-blue-400 rounded transition duration-700 ease-in-out hover:bg-blue-200 p-8">9</div>
+        </div>
+    </div>
+    <div class="flex justify-center my-8">
+        <svg class="animate-bounce w-6 h-6 text-amber-900" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+    </div>
+    <div class="container mx-auto bg-blue-100 rounded p-12 mb-20">
+        <h2 class="text-lg">Заполни меня</h2>
+        <form action="" class="flex">
+            <input type="text" class="border border-blue-400 rounded placeholder-blue-400 px-4 mr-4" placeholder="name">
+            <input type="password" class="border border-blue-400 rounded placeholder-blue-400 px-4 mr-4" placeholder="password">
+            <input type="submit" class="border border-blue-400 rounded placeholder-blue-400 px-4 bg-blue-400 text-white" value="Отправить" onclick="event.preventDefault()">
+        </form>
+    </div>
+</body>
+</html>
