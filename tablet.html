@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="tablet">
-            <img src="./img/blue.png" alt="" style="z-index: 1" />
+            <div class="main_screen">
             <ul class="tablet_items">
                 <li class="tablet-items__item">
                     <img src="./img/img/1.png" alt="" />
@@ -33,12 +33,26 @@
                 </li>
             </ul>
         </div>
+        </div>
         <style>
-            .tablet_items {
-                color: transparent;
+            .tablet{
+                width: 600px;
+                height: 650px;
+                background:url('./img/img/blue.png') no-repeat;
+                background-size: contain;
+            }
+            .main_screen{
                 display: flex;
             }
-            .
+            .tablet-items__item{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                float: left;
+                margin: auto;
+                padding: 18px;
+            }
+            
         </style>
     </body>
 </html>
