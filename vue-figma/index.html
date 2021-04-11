@@ -8,20 +8,30 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./pages/style.css" />
 
         <title>Document</title>
     </head>
+    <header></header>
     <body>
         <script src="https://unpkg.com/vue/dist/vue.js"></script>
         <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
-        <div id="app" class="container" style="margin-top: 50px">
-            <nav
+        <div id="app" class="container" style="margin: 0;">
+             <nav
                 class="navbar navbar-expand-lg navbar-light"
                 style="background-color: #e3f2fd"
             >
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav mr-0 mt-2 mt-lg-0">
                         <li>
                             <router-link class="nav-link" to="/"
                                 >Home page</router-link
@@ -39,11 +49,10 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-            <!-- отображаем тут компонент, для которого совпадает маршрут -->
-            <router-view></router-view>
-        </div>
-
+            </nav> 
+<div>
+        <router-view ></router-view>
+    </div>
         <script src="pages/home.vue.js"></script>
         <script src="pages/page_1.vue.js"></script>
         <script src="pages/page_2.vue.js"></script>
@@ -56,7 +65,7 @@
                 { path: '/page_2', component: Page_2 },
             ];
             const router = new VueRouter({
-                routes, // сокращённая запись для `routes: routes`
+                routes,
             });
             var app = new Vue({
                 el: '#app',
