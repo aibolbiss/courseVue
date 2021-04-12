@@ -20,12 +20,16 @@
 
         <title>Document</title>
     </head>
+    <!-- У тебя тэг header стоит не внутри body, а за его пределами. А это не допустимо. Еще она пустая. Для чего ты его создал? -->
     <header></header>
     <body>
+        <!-- Скрипты желательно надо ставить в конце кода. Перед закрывающим тегом </body> -->
         <script src="https://unpkg.com/vue/dist/vue.js"></script>
         <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-
+        <!-- Ты стили вынес во внешний файл style.css. Если сделал так, не стоит писать стили в тегах -->
+        <!-- Классу container надо задать 100% ширину. А у тебя стоит фиксированная ширина -->
         <div id="app" class="container" style="margin: 0;">
+            <!-- Тут опять. Есть классы у тебя. Почему стиль не там задаешь? Не надо писать стили в тегах. Это плохой тон. Так не запрещено делать конечно, но не желательно! -->
              <nav
                 class="navbar navbar-expand-lg navbar-light"
                 style="background-color: #e3f2fd"
